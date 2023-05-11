@@ -92,9 +92,9 @@ header ul {
   width: 1350px;
   height: 1350px;
   border-radius: 50%;
-  filter: blur(100px);
+  filter: blur(150px);
   background-color: white;
-  left: -400px;
+  left: -500px;
 }
 
 .containerP {
@@ -380,17 +380,24 @@ header ul {
 .container-four {
   width: 100vw;
   height: 60vh;
-  margin-top: 75vw;
+  margin-top: 154vh;
   display: flex;
-  background-color: white;
+  background-color:  rgb(238, 247, 248);
   align-items: center;
+  
   overflow: hidden;
   position: absolute;
+ 
 }
 .conteudo-four {
   padding: 25px;
   border-radius: 4%;
   z-index: 100;
+}
+
+.text-four{
+font-size: 28px;
+color:  rgba(0, 255, 13, 0.952);
 }
 
 .conteudo-four button {
@@ -403,6 +410,28 @@ header ul {
   font-size: 20px;
   margin-top: 5vh;
   cursor: pointer;
+  position: relative;
+}
+
+.img-four{
+  width: 400px;
+  height: 370px;
+  position: absolute;
+  display: flex;
+  margin-left: 70vw;
+ 
+  z-index: 100;
+}
+
+.phone{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  border: 1px solid rgb(0, 238, 255);
+  position:absolute;
+  margin-left: 55vw;
+  
+  
 }
 
 
