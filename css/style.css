@@ -1,163 +1,133 @@
-@import 'animação.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+@import "animação.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Poppins';
-    overflow-x: hidden;
-    
-    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins";
+  overflow-x: hidden;
 }
 
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
 
-::-webkit-scrollbar{
-   width: 0px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 100;
-    background-color: white;
-   
-   
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
 }
 
-header .logo img{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    
-    
+header .logo img {
+  width: 40px;
+  height: 40px;
+  display: flex;
 }
 
-
-.logo{
-    display: flex;
-    gap: 10px;
-    margin-left: 5vh;
+.logo {
+  display: flex;
+  gap: 10px;
+  margin-left: 5vh;
 }
- .logo1{
-    font-weight:100;
-    display: flex;
-    color: rgb(1, 255, 48);
-    font-size: 23px;
- }
+.logo1 {
+  font-weight: 100;
+  display: flex;
+  color: rgb(1, 255, 48);
+  font-size: 23px;
+}
 
- .sysra{
-    color: rgb(0, 0, 0);
-    font-weight:100;
- }
+.sysra {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
 
- header ul{
-    display: flex;
-    gap: 50px;
-    margin-right: 8vh;
-    font-size: 16px;
- }
+header ul {
+  display: flex;
+  gap: 50px;
+  margin-right: 8vh;
+  font-size: 16px;
+}
 
- 
+.texto1 {
+  width: 34vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 50px;
+}
 
- .texto1{
-    
-    
-    width: 34vw;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 50px;
-    
-   
- }
+.containert {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../imsgens/pessoas-usando-celulares-inteligentes-em-cafés-novo-conceito-de-reunião-normal-sobre-amigos-entediados-compartilhando-conteúdo-208349726.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
 
- .containert{
+.circle {
+  position: absolute;
+  width: 1350px;
+  height: 1350px;
+  border-radius: 50%;
+  filter: blur(100px);
+  background-color: white;
+  left: -400px;
+}
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin-top:5vh;
-    display: flex;
-    align-items: center;
-    background-image: url(../imsgens/pessoas-usando-celulares-inteligentes-em-cafés-novo-conceito-de-reunião-normal-sobre-amigos-entediados-compartilhando-conteúdo-208349726.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-    position: relative;
-    overflow: hidden;
-    
-    
-    
-    
- }
+.containerP {
+  width: 40vw;
+  height: 80vh;
+  margin-left: 2vh;
+  margin-bottom: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
- .circle{
-    position: absolute;
-    width: 1350px;
-    height: 1350px;
-    border-radius: 50%;
-    filter: blur(100px);
-    background-color: white;
-    left: -400px;
- }
- 
+.cp-text {
+  font-size: 25px;
+  color: rgb(1, 248, 1);
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
- .containerP{
-    
-    width: 40vw;
-    height: 80vh;
-    margin-left: 2vh;
-    margin-bottom: 10vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-    
-    
- }
+.conteudo {
+  padding: 25px;
+  border-radius: 4%;
+  z-index: 100;
+}
 
+.color-two {
+  border: 1px solid rgb(0, 255, 0);
+}
 
- .cp-text{
-    font-size: 25px;
-    color: rgb(1, 248, 1);
-    display: flex;
-    flex-direction: column;
-    font-weight: 800;
-    text-transform: uppercase;
-    
-   
- }
-
-
-
- .conteudo{
-    
-    padding: 25px;
-    border-radius: 4%;
-    z-index: 100;
-   
- }
-
- .color-two{
-    border: 1px solid rgb(0, 255, 0);
- }
-
- .conteudo button{
+.conteudo button {
   color: rgb(0, 252, 0);
   border-color: rgb(0, 252, 0);
   background-color: transparent;
@@ -167,332 +137,272 @@ header .logo img{
   font-size: 20px;
   margin-top: 5vh;
   cursor: pointer;
-  
- }
-
-  .type-animation {
-    animation: sim 500ms infinite normal, typing 4s 0.6s normal forwards, slide 6s steps(2) infinite;
-    display: flex;
- 
 }
 
-.gapp{
-    margin-left: 10px;
+.type-animation {
+  animation: sim 500ms infinite normal, typing 4s 0.6s normal forwards,
+    slide 6s steps(2) infinite;
+  display: flex;
 }
 
- /* Segundo container  */
+.gapp {
+  margin-left: 10px;
+}
+
+/* Segundo container  */
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ecf0f1;
-    position: absolute;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  position: absolute;
 }
 .content {
-    background-color: rgba(255, 255, 255, 0.699);
-    border-radius: 15px;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    height: 70vh;
-    width: 100vw;
-    
-   
+  background-color: rgba(255, 255, 255, 0.699);
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
 }
 .content::before {
-    content: "";
-    position: absolute;
-    background-color: #c2dbd5;
-    width: 40%;
-    height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  content: "";
+  position: absolute;
+  background-color: #c2dbd5;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 
-
-    left: 0;
+  left: 0;
 }
 .title {
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: capitalize;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .title-second {
-    color: #58af9b;
+  color: #58af9b;
 }
-
 
 .btn {
-    border-radius: 15px;
-    text-transform: uppercase;
-    color: rgb(2, 247, 255);
-    font-size: 8px;
-    padding: 10px 50px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 150px;
-    align-self: center;
-    border: none;
-    margin-top: 1rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: rgb(2, 247, 255);
+  font-size: 8px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
 }
 .btn-primary {
-    background-color: transparent;
-    border: 1px solid rgb(0, 195, 255);
-    transition: background-color .5s;
+  background-color: transparent;
+  border: 1px solid rgb(0, 195, 255);
+  transition: background-color 0.5s;
 }
 .btn-primary:hover {
-    background-color: #fff;
-    color: #58af9b;
+  background-color: #fff;
+  color: #58af9b;
 }
 .btn-second {
-    background-color: #58af9b;
-    border: 1px solid #58af9b;
-    transition: background-color .5s;
+  background-color: #58af9b;
+  border: 1px solid #58af9b;
+  transition: background-color 0.5s;
 }
 .btn-second:hover {
-    background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b;
+  background-color: #fff;
+  border: 1px solid #58af9b;
+  color: #58af9b;
 }
 .first-content {
-    display: flex;
+  display: flex;
 }
 .first-content .second-column {
-    z-index: 11;
+  z-index: 11;
 }
 .first-column {
-    text-align: center;
-    width: 40%;
-    z-index: 10;
-   
-    
+  text-align: center;
+  width: 40%;
+  z-index: 10;
 }
 .second-column {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 /* second content*/
 
 .second-content {
-    position: absolute;
-    display: flex;
+  position: absolute;
+  display: flex;
 }
 .second-content .first-column {
-    order: 2;
-    z-index: -1;
+  order: 2;
+  z-index: -1;
 }
 .second-content .second-column {
-    order: 1;
-    z-index: -1;
+  order: 1;
+  z-index: -1;
 }
 
-
 .sign-in-js .first-content .first-column {
-    z-index: -1;
+  z-index: -1;
 }
 
 .sign-in-js .second-content .second-column {
-    z-index: 11;
+  z-index: 11;
 }
 .sign-in-js .second-content .first-column {
-    z-index: 13;
+  z-index: 13;
 }
 
 .sign-in-js .content::before {
-    left: 60%;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-    background-image: url(../imsgens/mokuppc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    transition: .3s ease-out;
-    z-index: 12;
+  left: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+  background-image: url(../imsgens/mokuppc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-out;
+  z-index: 12;
 }
 
-.content::before{
-    background-image: url(../imsgens/makupmobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
+.content::before {
+  background-image: url(../imsgens/makupmobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; 
-    background-image: url(../imsgens/makupmobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    transition: .3s ease-out;
-    z-index: 12;
+  animation: slideout 1.3s;
+  background-image: url(../imsgens/makupmobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-out;
+  z-index: 12;
 }
 
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column {
-    z-index: -1;
+  z-index: -1;
 }
 
 .sign-up-js .first-content .second-column {
-    z-index: 11;
+  z-index: 11;
 }
 
 .sign-up-js .first-content .first-column {
-    z-index: 13;    
+  z-index: 13;
 }
 
-
-
 .sign-in-js .first-content .second-column {
-
-    z-index: -1;
-    position: relative;
-    animation: deslocamentoEsq 1.3s; 
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 1.3s;
 }
 
 .sign-up-js .second-content .second-column {
-    position: relative;
-    z-index: -1;
-    animation: deslocamentoDir 1.3s;
+  position: relative;
+  z-index: -1;
+  animation: deslocamentoDir 1.3s;
 }
 
-.text-two{
-   display: flex;
-   margin-top: 20px;
-   font-size: 20px;
- 
-  
-  
+.text-two {
+  display: flex;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
-.teste{
-   margin-top: 10px;
-   border-left: 4px solid  #58af9b;
-   gap: 50px;
-  
-      
+.teste {
+  margin-top: 10px;
+  border-left: 4px solid #58af9b;
+  gap: 50px;
 }
 
-.saiba-mais{
-    margin-top: 15px;
-    cursor: pointer;
-    
+.saiba-mais {
+  margin-top: 15px;
+  cursor: pointer;
 }
 
-
-
-.saiba-mais:hover{
-color: #58af9b;
-transition: .3s ease-out;
-
+.saiba-mais:hover {
+  color: #58af9b;
+  transition: 0.3s ease-out;
 }
-
 
 /* Terceiro container */
-.container-three{
+.container-three {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  margin-top: 70vh;
+  position: absolute;
+  display: flex;
 
-    width: 100vw;
-    height: 84vh;
-    display: flex;
-    margin-top: 70vh;
-   position: absolute;
-    display: flex;
-    
-    align-items: center;
-    background-image: url(../imsgens/mother-with-two-daughters-kitchen-baking.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-   
-    overflow: hidden;
-   
-    
- }
+  align-items: center;
+  background-image: url(../imsgens/mother-with-two-daughters-kitchen-baking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
- .conteudo-two{
-    margin-left: 65vw;
-    margin-bottom:20vh ;
-    margin-right: 4vh;
-    z-index: 1;
-    
- }
- .text-three{
-    padding: 100px;
-    text-align: center;
-    display: flex;
- }
+  overflow: hidden;
+}
 
- .color{
-   
-    backdrop-filter: blur(15px);
-    
- }
+.conteudo-two {
+  margin-left: 65vw;
+  margin-bottom: 20vh;
+  margin-right: 4vh;
+  z-index: 1;
+}
+.text-three {
+  padding: 100px;
+  text-align: center;
+  display: flex;
+}
 
- .container-four{
+.color {
+  backdrop-filter: blur(15px);
+}
 
-    width: 100vw;
-    height:60vh;
-    margin-top: 75vw;
-    display: flex;
-    background-color: white;
-    align-items: center;
-    overflow: hidden;
-    position: absolute;
-   
- }
+.container-four {
+  width: 100vw;
+  height: 60vh;
+  margin-top: 75vw;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+.conteudo-four {
+  padding: 25px;
+  border-radius: 4%;
+  z-index: 100;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.conteudo-four button {
+  color: rgb(0, 252, 0);
+  border-color: rgb(0, 252, 0);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 255, 0);
+  border-radius: 10%;
+  font-size: 20px;
+  margin-top: 5vh;
+  cursor: pointer;
+}
 
 
