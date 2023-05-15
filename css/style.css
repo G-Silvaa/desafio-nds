@@ -15,6 +15,19 @@ a {
   color: inherit;
 }
 
+ul li a.cor{
+  color: rgb(1, 255, 48);;
+}
+ul li a:hover{
+  color: rgb(1, 255, 48);
+  transition: 1s;
+}
+
+ul li a.cor:hover{
+  color: rgb(1, 255, 48);
+  transition: 1s;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -31,8 +44,8 @@ header {
 }
 
 header .logo img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: flex;
 }
 
@@ -155,11 +168,11 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ecf0f1;
+  background-color: #ffffff;
   position: absolute;
 }
 .content {
-  background-color: rgba(255, 255, 255, 0.699);
+  background-color:  rgb(238, 247, 248);
   border-radius: 15px;
   justify-content: space-between;
   align-items: center;
@@ -425,13 +438,26 @@ color:  rgba(0, 255, 13, 0.952);
 
 .phone{
   width: 300px;
-  height: 100px;
+  height: 200px;
+ 
   display: flex;
-  border: 1px solid rgb(0, 238, 255);
   position:absolute;
   margin-left: 55vw;
+  align-items: center;
   
   
 }
+
+.phone h1{
+  display: block;
+  display: none;
+  font-size: 22px;
+}
+
+.phone h1.active{
+  display: flex;
+  
+}
+
 
 
