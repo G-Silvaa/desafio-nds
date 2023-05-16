@@ -2,8 +2,10 @@
 var btnSignin = document.querySelector("#signin");
 var btnSignup = document.querySelector("#signup");
 var body = document.querySelector("body");
+const text = document.querySelectorAll('.phone h1')
+const menubar = document.querySelectorAll('ul li a')
 
-
+//segundo container
 btnSignin.addEventListener("click", function () {
    body.className = "sign-in-js"; 
 });
@@ -12,7 +14,7 @@ btnSignup.addEventListener("click", function () {
     body.className = "sign-up-js";
 })
 
-const text = document.querySelectorAll('.phone h1')
+
 let idx = 0;
 
 function changeName(){
@@ -32,7 +34,7 @@ function changeName(){
 
 setInterval(changeName, 2000);
 
-const menubar = document.querySelectorAll('ul li a')
+//cor da header
 
 function selectL(){
     menubar.forEach((item)=> 
@@ -44,6 +46,31 @@ function selectL(){
 menubar.forEach((item)=>
     item.addEventListener('click',selectL)
 )
+
+//scroll suave
+
+function distanceTop(element){
+   const id = element.getAttribute("href");
+   return document.querySelector(id).offsetTop;
+}
+
+function nativeScroll(distanceFromTheTop){
+    window.scroll({
+        top: distanceFromTheTop,
+        behavior:"smooth"
+    });
+}
+
+function scrollToSection(event){
+    event.preventDefault();
+    const distanceFromTheTop = distanceTop(event.target) - 90;
+    nativeScroll(distanceFromTheTop);
+   
+}
+
+menubar.forEach((link)=>{
+    link.addEventListener("click", scrollToSection)
+})
 
 
 
